@@ -1,0 +1,132 @@
+.grid_con{
+  display: grid;
+  grid-template-columns: 500px 500px;
+  text-align: center;
+  font-family: Gorgia;
+  background-color: #fff;
+
+}
+.head1{
+  grid-column: 1/span 2;
+  grid-row: 1;
+  padding-top: 40px;
+  padding-left: 60px;
+  letter-spacing: 10px;
+  color: #f2f0eb;
+  background-image: url(../img/back_con2.jpg);
+  height: 100px;
+  text-align: left;
+  width: 100%;
+}
+.text{
+  grid-column: 1/span 2;
+  grid-row: 2;
+  height: 100px;
+  padding-top: 50px;
+}
+.right-box{
+    border-style:inset;
+  border-color:black;
+  grid-column: 1;
+  grid-row: 3;
+  height:500px;
+  padding: 20px;
+  text-align: justify;
+  margin: 30px;
+}
+.left-box{
+  border-style: groove;
+  border-color:black;
+  height:500px;
+  padding: 20px;
+  margin: 30px;
+}
+@media screen and (max-width: 1000px) {
+    .grid_con{
+      grid-template-columns: 500px;
+    }
+    .left-box{
+        grid-column: 1;
+      grid-row:4;
+    }
+}
+
+}
+form{
+  line-height: 40px;
+}
+input{
+  color: black;
+  padding:10px;
+  margin:10px 0; // add top and bottom margin
+}
+
+input[type=text] {
+  padding:10px;
+  border:0;
+  box-shadow:0 0 15px 4px rgba(0,0,0,0.3);
+}
+input[type=email] {
+  padding:10px;
+  border:0;
+  box-shadow:0 0 15px 4px rgba(0,0,0,0.3);
+}
+textarea{
+  width: 100%;
+  padding:10px;
+  border:0;
+  box-shadow:0 0 15px 4px rgba(0,0,0,0.3);
+}
+input[type=submit],input[type=reset] {
+  padding:10px;
+  border:0;
+  box-shadow:0 0 15px 4px rgba(0,0,0,0.5);
+  border-radius: 5px;
+  align-items: stretch;
+  margin-top: 5px;
+  margin-left: 50px;
+}
+.grid3{
+  display:grid;
+  grid-template-columns: 80px 200px;
+  grid-template-rows: 100px 100px 100px 100px;
+  padding: 50px;
+}
+.logo1 img{
+  grid-column: 1;
+  width: 80px;
+  height: 80px;
+  border-radius: 30px;
+
+}
+.name{
+  font-size-adjust: auto;
+  text-shadow: rgba(0, 0, 0, 0.5);
+  text-align: center;
+  padding: 30px;
+  font-size: 20px;
+}
+.logo1:hover{
+  border: 3px solid blue;
+    text-shadow: 1px 1px black;
+    animation-name: icon;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+.name:hover{
+  border: 3px solid blue;
+  text-shadow: 1px 1px black;
+}
+@keyframes icon {
+  0%{height: 81px;width: 81px}
+  10%{height: 82px;width: 82px}
+  20%{height: 83px;width: 83px}
+  30%{height: 84px;width: 84px}
+  40%{height: 85px;width: 85px}
+  50%{height: 86px;width: 86px}
+  60%{height: 85px;width: 85px}
+  70%{height: 84px;width: 84px}
+  80%{height: 83px;width: 83px}
+  90%{height: 82px;width: 82px}
+  100%{height: 81px;width: 81px}
+}
